@@ -64,7 +64,7 @@ public class GroceryDAO {
             PreparedStatement ps = connection.prepareStatement(sql);
 
             //add code that leverages ps.setString here
-            ps.setString(0, groceryName);
+            ps.setString(1, groceryName);
 
             ps.executeUpdate();
         }catch(SQLException e){
